@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&family=Libre+Franklin:wght@100;400;500&display=swap');
+
+
+.email_box {
+	background: #141c21;
+	display: flex;
+    justify-content: flex-end;
+    padding: 10px 50px;
+    gap: 20px;
+}
+
+.email_box_info {
+	display: flex;
+    flex-direction: row;
+    padding: 5px;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.email_box img {
+	width: 24px;
+	height: 24px;
+}
+
+.email_box p {
+	color: #fff;
+	font-size: 15px;
+}
+
+.menu__link__language {
+	color: #fff!important;
+	padding: 3px 13px!important;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    position: relative;
+    z-index: 5;
+    background: linear-gradient(to right, #feae00 0 220px, white 220px 100%);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 15px;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 340px;
+    background: #feae00;
+    clip-path: polygon(0 0, 300px 0, 100% 100%, 0 100%);
+    z-index: -1;
+}
+
+.vertical-divider {
+    width: 1px;
+    background-color: #141c21;
+    height: 30px;
+    margin: 6px 50px;
+}
+
+.header-right {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 30px;
+}
+
+.header-right div button {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+	background: #feae00;
+	color: #000;
+	padding: 13px 50px;
+}
+
+.menu__icon {
+	width: 60px;
+	height: 60px;
+}
+
+.desktop-nav {
+	gap: 45px!important;
+}
+
+.form__bg {
+	clip-path: polygon(100% 0, 100% 72%, 0% 250%, 0% 0%);
+}
+
+.desktop-nav, .desktop { display: flex; }
+.mobile-menu { display: none; }
+
+/* points */
+.join {
+    background-image: url("../assets/bg__join.jpg");
+    background-size: cover;
+    background-position: center 45%;
+    background-repeat: no-repeat;
+    background-color: #00050b;
+    min-height: 300px;
+    position: relative;
+}
+
+.join::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 62%);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+.join > * {
+    position: relative;
+    z-index: 2;
+}
+
+.join-div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 50px auto;
+}
+
+.join .title-2 {
+	color: #fff;
+}
+
+.register__button__1 {
+	display: flex;
+}
+
+.register__button__1 button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: #feae00;
+    color: #000;
+    padding: 13px 50px;
+}
+
+/* FOOTER */
+footer .nav a {
+	color: #fff;
+}
+
+.nav1 .nav__link:hover {
+	text-decoration: none!important;
+}
+
+.nav1 .nav__link a:hover {
+	color: #feae00;
+}
+
+@media (max-width: 768px) {
+	.desktop-nav, .desktop, .registration, .home__content__image, .footer-nav, .vertical-divider, .menu__icon, .register__button { display: none!important; }
+    .mobile-menu { 
+        display: flex;
+        align-items: center;
+        gap: 10px; 
+    }
+    #menu { 
+        display: none; 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        height: 100vh; 
+        background: rgba(0, 0, 0, 0.8); 
+        text-align: center; 
+        padding-top: 100px; 
+    }
+    #menu.overlay { 
+        display: block; 
+        z-index: 49;
+    }
+    #menu ul {
+        padding: 0;
+    }
+    #menu li {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+    #menu a {
+        color: #fff;
+        display: block;
+        font-size: 25px;
+        margin-bottom: 30px;
+        text-decoration: none;
+    }
+    .contact-btn-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+    }
+    #burger-menu { 
+        cursor: pointer; 
+        height: 27px; 
+        width: 27px; 
+        position: relative; 
+        z-index: 50; 
+    }
+    #burger-menu span, #burger-menu span:before, #burger-menu span:after {
+        background: #000; 
+        display: block; 
+        height: 2px; 
+        position: absolute; 
+        transition: 0.3s ease-in-out;
+    }
+
+    #burger-menu.close span, #burger-menu.close span:before, #burger-menu.close span:after {
+    	background: #fff;
+    }
+
+    #burger-menu span:before, #burger-menu span:after { content: ''; }
+    #burger-menu span:before { 
+        left: 0; 
+        top: -10px; 
+        width: 27px; 
+    }
+    #burger-menu span { 
+        right: 0; 
+        top: 13px; 
+        width: 27px; 
+    }
+    #burger-menu span:after { 
+        left: 0; 
+        top: 10px; 
+        width: 27px; 
+    }
+    #burger-menu.close span:before { 
+        top: 0; 
+        transform: rotate(90deg); 
+        width: 27px; 
+    }
+    #burger-menu.close span { 
+        transform: rotate(-45deg); 
+        top: 13px; 
+        width: 27px; 
+    }
+    #burger-menu.close span:after { 
+        top: 0; 
+        left: 0; 
+        transform: rotate(90deg); 
+        opacity: 0; 
+        width: 0; 
+    }
+
+    .email_box div {
+        justify-content: center;
+    }
+
+    .submenu {
+		width: 100%;
+	}
+
+	.form__bg {
+		clip-path: polygon(100% 0, 100% 100%, 0% 100%, 0% 0%);
+	}
+
+	.join-div {
+		flex-direction: column;
+	}
+
+	.register__button__1 {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 438px) {
+	.email_box {
+		justify-content: center;
+		padding: 10px;
+	}
+
+	.email_box p {
+		font-size: 12px;
+	}
+
+	.submenu {
+		width: 111%!important;
+	}
+
+	.header {
+		padding: 0px 20px;
+	}
+
+	.nav1 {
+		flex-direction: column;
+	}
+
+	.copyright {
+		text-align: left!important;
+	}
+}
+
+@media (max-width: 375px) {
+	.header::before {
+		width: 320px;
+    	clip-path: polygon(0 0, 250px 0, 89% 100%, 0 100%);
+	}
+}
