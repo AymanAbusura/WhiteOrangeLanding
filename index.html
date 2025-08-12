@@ -43,7 +43,6 @@
             </div>
         </div>
         <header class="header">
-            <!-- DESKTOP NAVIGATION -->
             <a href="/" class="logo"><img src="assets/logo.svg" alt=""></a>
             <nav class="nav desktop-nav">
                 <a class="menu__link hover-underline-animation center" href="/">Home</a>
@@ -60,7 +59,6 @@
                 </div>
             </div>
 
-            <!-- Mobile Navigation -->
             <div class="mobile-menu">
                 <div id="burger-menu"><span></span></div>
                 <div id="menu">
@@ -122,267 +120,77 @@
             </div>
         </section>
     </div>
-    <!-- <div class="bg">
-        <header class="header">
-            <div class="container flex-bl">
-            <a href="/" class="logo">
-            <img src="assets/logo.svg" alt=""></a>
-            <div class="language">
-            <a id="toggle" class="menu__link">
-            <div class="iti__flag iti__gb"></div>
-            En
-            </a>
-            <ul class="submenu">
-            <li class="subitem">
-            <a href="/languages/dk/">
-            <div class="iti__flag iti__dk"></div>
-            Dk
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/de/">
-            <div class="iti__flag iti__de"></div>
-            De
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/cz/">
-            <div class="iti__flag iti__cz"></div>
-            CZ
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/es/">
-            <div class="iti__flag iti__es"></div>
-            Es
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/fi/">
-            <div class="iti__flag iti__fi"></div>
-            fi
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/fr/">
-            <div class="iti__flag iti__fr"></div>
-            Fr
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/gr/">
-            <div class="iti__flag iti__gr"></div>
-            Gr
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/it/">
-            <div class="iti__flag iti__it"></div>
-            IT
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/hu/">
-            <div class="iti__flag iti__hu"></div>
-            HU
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/nl/">
-            <div class="iti__flag iti__nl"></div>
-            NL
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/no/">
-            <div class="iti__flag iti__no"></div>
-            NO
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/pl/">
-            <div class="iti__flag iti__pl"></div>
-            PL
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/pt/">
-            <div class="iti__flag iti__pt"></div>
-            PT
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/ru/">
-            <div class="iti__flag iti__ru"></div>
-            RU
-            </a>
-            </li>
-            <li class="subitem">
-            <a href="/languages/se/">
-            <div class="iti__flag iti__se"></div>
-            SE
-            </a>
-            </li>
-            </ul>
-            </div>
-            <nav class="menu__nav">
-            <a class="menu__link" href="/pages/about/">About The Platform</a>
-            <a class="menu__link" href="/pages/contact/">Contact Page</a>
-            <a class="menu__link" href="/pages/login/">Login</a>
-            </nav>
-            </div>
-        </header>
-
-        <section class="home">
-            <div class="container home__hold">
-            <div class="home__body">
-            <div class="home__content">
-            <h1 class="home__title">
-            <b class="accent">NethertoxAGENT</b><sup>TM</sup>
-            </h1>
-            <p class="home__text">
-            Invest in the Wild Frontier of Crypto and Trade with All the Tools You Need
-            </p>
-            </div>
-            </div>
-            <div class="home__form">
-            <div class="form__bg" id="form">
-            <h3 class="title-form">Maximize Your Gains with <br>NethertoxAGENT</h3>
-            <form action="order.php" class="form" method="POST">
-
-            <input type="hidden" name="ip" id="ip" value="<?=$_SERVER['REMOTE_ADDR'] ?? '';?>">
-            <input type="hidden" name="country" id="country" value="">
-            <input type="hidden" name="area_code" id="prefix" value="">
-
-            <div class="form-group input-wrapper relative-input-wrapper">
-            <input type="text" placeholder="Enter your First Name" name="first_name" class="form-control" value="" data-validation-status="inactive">
-            <div data-error-status="inactive" data-for-error="first_name" class="error">Your first name is too
-            short (at least 2 characters)</div>
-            <span data-check-icon="inactive" data-check-icon-for="first_name" class="check-icon"><img class="checkbox" src="assets/check-icon.png" alt="✔"></span>
-            </div>
-            <div class="form-group input-wrapper relative-input-wrapper">
-            <input type="text" placeholder="Enter your Last Name" name="last_name" class="form-control" value="" data-validation-status="inactive">
-            <div data-error-status="inactive" data-for-error="last_name" class="error">Your last name is too
-            short (at least 2 characters)</div>
-            <span data-check-icon="inactive" data-check-icon-for="last_name" class="check-icon"><img class="checkbox" src="assets/check-icon.png" alt="✔"></span>
-            </div>
-            <div class="form-group input-wrapper relative-input-wrapper">
-            <input type="email" placeholder="Enter your Email Address" name="email" class="form-control" value="" data-validation-status="inactive">
-            <div data-error-status="inactive" data-for-error="email" class="error">Please enter your real email
-            address (example@email.com)</div>
-            <span data-check-icon="inactive" data-check-icon-for="email" class="check-icon"><img class="checkbox" src="assets/check-icon.png" alt="✔"></span>
-            </div>
-            <div class="form-group input-wrapper relative-input-wrapper">
-
-            <input type="tel" id="phone" name="phone" class="form-control" value="" data-validation-status="inactive" autocomplete="off" data-intl-tel-input-id="0" placeholder="Enter your phone number" style="padding-left: 87px;">
-
-            <div data-error-status="inactive" data-for-error="phone" class="error">Please enter a valid phone
-            number.</div>
-            <span data-check-icon="inactive" data-check-icon-for="phone" class="check-icon"><img class="checkbox" src="assets/check-icon.png" alt="✔"></span>
-            <div id="api-error" class="api-error error">Error.</div>
-            </div>
-            <div class="form-group">
-            <button class="btn">Register Now</button>
-            </div>
-            <div id="js-loader" class="form__wrapper-loader loader">
-                <noscript>Please enable JavaScript in your browser or refresh the page and wait.</noscript>
-            </div>
-            </form>
-            <ul>
-            <li> By entering your personal details here and clicking the <b>Register Now</b> button you agree and
-            accept the website <a href="/pages/policy/" class="accent">Privacy Policy</a> and <a href="/pages/terms/" class="accent">Terms &amp; Conditions</a>
-            </li>
-            <li> Your personal information may be shared with third parties providing trading services as provided
-            in the website privacy policy. </li>
-            </ul>
-            </div>
-            </div>
-            </div>
-        </section>
-    </div> -->
 
     <section class="block p0">
+        <div class="container what-container">
+            <img src="assets/man__what.webp" alt="Man in suit">
+            <div class="about-section">
+                <div class="section-breef">
+                    <span class="section-breef-number">01</span>
+                    <span class="section-breef-text">About Company</span>
+                </div>
+                <h1>What is NethertoxAGENT?</h1>
+                <p>The convenience of this platform allows investors of all backgrounds and abilities to connect to it. This diversity has become one of the biggest advantages of NethertoxAGENT because you get support from the best.</p>
+                <div class="stats">
+                    <span>Use of modern <br> investment strategies</span>
+                    <div class="vertical-divider vertical-divider-2"></div>
+                    <span>265K <br> Payments</span>
+                </div>
+                <a href="#" class="read-more-btn">READ MORE →</a>
+            </div>
+        </div>
+
         <div class="container">
-        <div class="block__row">
-        <div class="block__col">
-        <h2 class="title-2">What is <b class="accent">NethertoxAGENT?</b></h2>
-        <p class="txt">NethertoxAGENT operates as a trading platform designed to bring Bitcoin to a market eager for
-        every
-        opportunity to succeed.
-        This platform enjoys better security and an offer you can’t ignore.
-        </p>
-        <p>
-        The convenience on this platform makes it so that traders from all backgrounds and abilities can connect.
-        This
-        diverse
-        number of backgrounds has become one of the greatest advantages at NethertoxAGENT because you receive support
-        from the
-        best.
-        </p>
-        <div class=" btn-cta btn-o">
-        LEARN MORE
-        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.75 5.0625C6.43934 5.0625 6.1875 4.81066 6.1875 4.5C6.1875 4.18934 6.43934 3.9375 6.75 3.9375H13.5C13.8107 3.9375 14.0625 4.18934 14.0625 4.5V11.25C14.0625 11.5607 13.8107 11.8125 13.5 11.8125C13.1893 11.8125 12.9375 11.5607 12.9375 11.25V5.85799L4.89775 13.8977C4.67808 14.1174 4.32192 14.1174 4.10225 13.8977C3.88258 13.6781 3.88258 13.3219 4.10225 13.1023L12.142 5.0625H6.75Z" fill="#FF6A00"></path>
-        </svg>
-        </div>
-        </div>
-        <div class="block__img block__img-1 ">
-        <img src="assets/img-1.svg" alt="" loading="lazy">
-        </div>
-        </div>
+            <div class="bottom-section">
+                <div class="bottom-text">
+                    <h2>Investor startups</h2>
+                    <p>NethertoxAGENT is a platform designed to bring growth and success for everyone. This platform is characterized by enhanced security and an offer that cannot be ignored.</p>
+                    <a href="#" class="read-more-outline">READ MORE →</a>
+                </div>
+                <div class="vertical-divider vertical-divider-3"></div>
+                <div class="bottom-img">
+                    <div>
+                        <p class="years">5 years</p>
+                        <p>We have experience<br>Our Company</p>
+                    </div>
+                    <img src="assets/invest.webp" alt="Graph image">
+                </div>
+            </div>
         </div>
     </section>
 
-    <section class="block p0">
+    <section class="block p0 section_our_company_values">
         <div class="container">
-        <h2 class="title-2 center"> <b class="accent">Investing in Bitcoin</b> - Why It Makes Sense</h2>
-        <p class="txt center">We will soon cover the platform NethertoxAGENT, but we’d first like to show you why Bitcoin
-        could
-        make perfect sense as an
-        investment. Even the most ignorant about cryptocurrencies will know the biggest one—Bitcoin. Chances are most
-        people
-        heard the name before.</p>
-        <div class="block__row-1 ">
-        <div class="block__img block__img-2">
-        <img src="assets/img-2.webp" alt="" loading="lazy">
-        </div>
-        <div class="block__col">
-        <p>Launched in 2009 as an open-source software, Bitcoin was the first of the cryptocurrencies. It was very
-        misunderstood at
-        first, and launched for a price of just $0.00099 per Bitcoin. Considering how its highest value (recorded
-        in
-        November
-        2021) was $68,789.63 per Bitcoin, that was an incredible steal in the early days.
-        </p>
-        <p>
-        Today, over 25,000 other cryptocurrencies exist in the marketplace, but what makes Bitcoin so special is
-        that
-        other
-        cryptocurrencies are unlikely to improve upon Bitcoin. It has the highest value out of all the other
-        cryptocurrencies
-        and most of the other cryptocurrencies’s prices follow the value of Bitcoin.
-        </p>
-        <p>
-        Bitcoin now has an iconic status in the cryptocurrency community, and it receives good backing to ensure
-        its
-        strength.
-        </p>
-        </div>
-        </div>
-        <p>
-        Now, we want to give you the full picture because cryptocurrencies, including Bitcoin, can be a volatile
-        market.
-        You
-        often hear about sudden spikes and plummets without warning. However, this volatility is what allows you to
-        make
-        money
-        with Bitcoin. We just wanted to make sure that you understand the risk before getting into it.</p>
-        <p>
-        Every trade has its risks and this includes Bitcoin. The key to making it successful is to minimize your risk
-        and
-        work
-        within set parameters.
-        </p>
+            <div class="section-breef centered">
+                <span class="section-breef-number">02</span>
+                <span class="section-breef-text">Our company values</span>
+            </div>
+            <div class="cards-wrapper">
+                <div class="card-item">
+                    <div class="card-body">
+                        <img src="assets/navigable_interface.svg" alt="Navigable interface">
+                        <h3 class="card-title lora-semibold">Navigable interface</h3>
+                        <p>We have done everything to make it easy and convenient for you to find the information you need.</p>
+                        <a href="#" class="read-more-btn-2"><span>READ MORE</span> →</a>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-body">
+                        <img src="assets/support.svg" alt="Support 24\7">
+                        <h3 class="card-title lora-semibold">Support 24\7</h3>
+                        <p>Our managers are ready to help you at any time of the day or night.</p>
+                        <a href="#" class="read-more-btn-2"><span>READ MORE</span> →</a>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <div class="card-body">
+                        <img src="assets/no_platform_fees.svg" alt="No platforms fees">
+                        <h3 class="card-title lora-semibold">No platforms fees</h3>
+                        <p>We value the trust of our clients, so using our platform is absolutely free.</p>
+                        <a href="#" class="read-more-btn-2"><span>READ MORE</span> →</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
