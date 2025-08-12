@@ -174,6 +174,7 @@ window.onload = function() {;
     }
     let _slideUp = (target, duration = 500) => {
         if (!target.classList.contains("_slide")) {
+            target.classList.remove("_visible");
             target.classList.add("_slide");
             target.style.transitionProperty = "height, margin, padding";
             target.style.transitionDuration = duration + "ms";
@@ -192,7 +193,6 @@ window.onload = function() {;
                 target.style.removeProperty("padding-bottom");
                 target.style.removeProperty("margin-top");
                 target.style.removeProperty("margin-bottom");
-                target.style.removeProperty("height");
                 target.style.removeProperty("overflow");
                 target.style.removeProperty("transition-duration");
                 target.style.removeProperty("transition-property");
@@ -200,12 +200,12 @@ window.onload = function() {;
             }, duration);
         }
     };
+
     let _slideDown = (target, duration = 500) => {
         if (!target.classList.contains("_slide")) {
             target.classList.add("_slide");
-            if (target.hidden) {
-                target.hidden = false;
-            }
+            target.classList.add("_visible");
+            if (target.hidden) target.hidden = false;
             let height = target.offsetHeight;
             target.style.overflow = "hidden";
             target.style.height = 0;
@@ -230,6 +230,7 @@ window.onload = function() {;
             }, duration);
         }
     };
+
     let _slideToggle = (target, duration = 500) => {
         if (target.hidden) {
             return _slideDown(target, duration);
