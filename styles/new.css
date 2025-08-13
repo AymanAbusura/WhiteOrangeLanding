@@ -634,6 +634,10 @@ footer .nav a {
 	color: #fff;
 }
 
+footer .nav a:hover {
+	color: #feae00;
+}
+
 .nav1 .nav__link:hover {
 	text-decoration: none!important;
 }
